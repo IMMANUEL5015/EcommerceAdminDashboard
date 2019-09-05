@@ -1,0 +1,397 @@
+/* GENERAL STYLES */
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    --margin: auto;
+    --special-text-color: rgb(156, 154, 154);
+    --special-font-size: 0.9em;
+    background-color: rgb(248, 248, 248);
+}
+
+/* styles for NAVIGATION MENU*/
+nav{
+    border-right: 1px solid var(--special-text-color);
+    box-shadow: 2px 2px 2px var(--special-text-color);
+}
+nav #menu_items{
+    width: 90%;
+    margin-right: var(--margin);
+    margin-left: var(--margin);
+}
+nav a{
+    text-decoration: none;
+}
+nav img{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+float: left;
+margin-right: 10px;
+}
+
+/* styles for the "ADMINISTRATOR'S NAME and PROFILE PICTURE" inside of the nav menu area */
+#admin #admin_name_and_title{
+    font-size: var(--special-font-size);
+}
+#admin_name_and_title h4{
+    padding-top: 13px;
+}
+#admin_name_and_title p{
+    margin-top: -15px;
+    color: var(--special-text-color);
+}
+
+/* styles for the MAIN MENU inside of the nav area */
+#main_menu{
+    margin-top: 50px;
+}
+#main_menu p{
+color: var(--special-text-color);
+font-size: 0.8em;
+}
+#main_menu ul{
+    list-style-type:none;
+    line-height: 1.9em;
+    font-size: 0.927em;
+    margin-left: -40px;
+}
+#main_menu li.major_menu{
+    border-top: 1px dotted var(--special-text-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#main_menu ul li a{
+    color: black;
+}
+#main_menu a.special_link{
+    color: blue;
+}
+#main_menu li i:nth-of-type(2){
+    float: right;
+}
+#main_menu ul#dashboard_sublinks{
+    border-left: 1px solid var(--special-text-color);
+    margin-left: 5px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+
+/* styles for the main content of the ecommerce admin dashboard (SALES MONITORING PAGE) */
+
+/* styles for the header section of the main content of the admin dashboard */
+header{
+    border-bottom: 1px solid var(--special-text-color);
+    box-shadow: 3px 3px 4px var(--special-text-color);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#header{
+    width: 95%;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+#header div{
+    float: right;
+    position: relative;
+}
+#header form{
+    display: inline-block;
+    width: 70%;
+    position: relative;
+}
+#header img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+#header .fa{
+    font-size: 1.4em;
+}
+#header #menu_toggler{
+    margin-right: 40px;
+}
+
+input[type="search"]{
+    width: 90%;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header form i{
+    position: absolute;
+    right: 120px;
+    top: 7px;
+}
+
+#messages{
+    position: absolute;
+    left: -100px;
+    top: 10px;
+}
+#notifications{
+    position: absolute;
+    left: -45px;
+    top: 10px;
+}
+header a{
+    color: black;
+}
+
+/* the styles for the section containing all the sales data  */
+section {
+    width: 95%;
+    margin-right: var(--margin);
+    margin-left: var(--margin);
+}
+/* styles for the basic sales info section */
+section #sales{
+    float: right;
+    margin-top: 13px;
+}
+section #welcome{
+    float: left;
+    font-size: var(--special-font-size);
+}
+#sales div{
+    float: left;
+    margin-right: 20px;
+    font-size: var(--special-font-size);
+}
+#sales div i{
+    color: red;
+}
+#sales div i:nth-of-type(5){
+    color: black;
+}
+#sales div p.sales_figures{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: -2px;
+}
+
+/* styles for the more sales info section */
+section #more_sales_info{
+    padding-top: 150px;
+}
+/* styles for the first section of MORE SALES INFO */
+#more_sales_info #first_section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid var(--special-text-color);
+    box-shadow: 3px 3px 4px var(--special-text-color);
+    padding-left:10px;
+    background: rgb(240, 240, 240);
+    padding-top: 10px;
+    grid-gap: 10px;
+}
+.info div{
+    float: left;
+    margin-right: 10px;
+}
+.icon i{
+    margin-top: 30px;
+    color:rgb(17, 0, 255);
+    font-size: 1.2em;
+}
+.special{
+    font-size: 0.75em;
+    color: var(--special-text-color);
+}
+.description p:nth-of-type(2){
+    font-size: 0.9em;
+}
+.description a{
+    text-decoration: none;
+    color: var(--special-text-color);
+}
+/* styles for the second section of MORE SALES INFO */
+#more_sales_info #second_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid var(--special-text-color);
+    box-shadow: 3px 3px 4px var(--special-text-color);
+}
+.financial_data{
+    padding-left: 10px;
+}
+.financial_data p:nth-of-type(1){
+    font-size: var(--special-font-size);
+}
+.figure{
+    font-size: 1.9em;
+    font-weight: thick;
+}
+.financial_data i {
+    color: rgb(17, 180, 17);
+}
+#second_section div:nth-of-type(3) i{
+    color: rgb(250, 6, 6);
+}
+.percentage{
+    font-weight: bold;
+}
+
+/* styles for the most recent earnings and top countries sales performance section */
+#recentEarnings_and_topCountries{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-gap: 25px;
+}
+
+/* general styles for most recent earnings and top countries */
+#most_recent_earnings, #top_countries{
+    border: 2px solid var(--special-text-color);
+    box-shadow: 3px 3px 4px var(--special-text-color);
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+#most_recent_earnings tr:nth-child(odd), #top_countries tr:nth-child(odd){
+    background: rgb(206, 202, 202);  
+    border-top: 1px solid var(--special-text-color);
+    border-bottom: 1px solid var(--special-text-color); 
+}
+/* styles specifically for the most recent earnings section */
+#most_recent_earnings{
+    text-align: center;
+} 
+#most_recent_earnings tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#most_recent_earnings tr#titles{
+    background: rgb(248, 248, 248);  
+    border: none; 
+}
+
+/* styles specifically for the top countries section */
+#top_countries tr{
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    grid-gap: 55px;
+}
+#top_countries img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* footer styles */
+footer{
+    border-top: 1px solid var(--special-text-color);
+    box-shadow: 3px 3px 4px var(--special-text-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: var(--special-text-color);
+    margin-top: 45px;
+}
+
+/*media queries for minor breakpoints */
+@media screen and (max-width: 1202px){
+    /* styles for more sales info section */
+    #more_sales_info #first_section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* styles for recent earnings and top countries   */
+    #most_recent_earnings tr{
+        grid-gap: 15px;
+    }
+    #top_countries tr{
+        grid-gap: 15px;
+    }
+}
+
+
+/* media queries styles for tablet and mobile devices*/
+@media screen and (max-width: 991px){
+    /* body styles */
+    body{
+        display: block;
+    }
+
+    /* styles for the header section and nav menu */
+    #header form, nav#menu{
+        display: none;
+    }
+    #header div{
+        margin-top: -10px; 
+    }
+    #header div img{
+        margin-top: 1px; 
+    }
+    
+    /* styles for the more sales info section */
+    #more_sales_info #first_section{
+        width: 98%;
+    }
+    #more_sales_info #second_section{
+        grid-template-columns: repeat(2, 1fr);
+}
+/* styles for most recent earnings and top countries */
+#recentEarnings_and_topCountries{
+    display: block;
+}
+ }
+/* more minor breakpoints */
+ @media screen and (max-width: 720px){
+    #more_sales_info #first_section{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    /* styles for most recent earnings and top countries */
+#recentEarnings_and_topCountries{
+    display: block;
+} 
+}
+
+@media screen and (max-width: 600px){
+    #more_sales_info #first_section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #more_sales_info #second_section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    /* styles for most recent earnings and top countries */
+#recentEarnings_and_topCountries{
+    font-size: 0.8em;
+}
+#most_recent_earnings tr{
+    grid-gap: 0px;
+}
+}
+/* media queries styles for very mobile devices*/
+@media screen and (max-width: 499px){
+    /* styles for the header section (NOTIFICATIONS and MESSAGES ICONS)*/
+#notifications_and_messages{
+    display: none;
+}
+/* more sales section */
+#more_sales_info #second_section{
+    padding-right: 10px;
+}
+/* styles for most recent earnings and top countries */
+#recentEarnings_and_topCountries{
+    font-size: 0.75em;
+}
+#recentEarnings_and_topCountries .hide{
+    display: none;
+}
+#most_recent_earnings tr{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+#top_countries tr{
+    grid-template-columns:1fr 1fr;
+    grid-gap: 0px;
+}
+    }
