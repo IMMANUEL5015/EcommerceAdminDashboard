@@ -10,12 +10,11 @@ menuToggler.addEventListener("click", function(){
        const navMenu = document.getElementById("menu");
        navMenu.style.display = "none";
        document.body.style.display = "block";
-       menuIsDisplayedOnPage = false; 
     }else{
         //add the nav menu back to the page.
         const navMenu = document.getElementById("menu");
         navMenu.style.display = "block";
-        document.body.style.display = "grid";
-        menuIsDisplayedOnPage = true; 
+        document.body.style.display = "grid"; 
     }
+    menuIsDisplayedOnPage = !menuIsDisplayedOnPage;
 });
