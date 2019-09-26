@@ -395,3 +395,12 @@ footer{
     grid-gap: 0px;
 }
     }
+
+    /* CSS styles to be used during the toggling of the navbar */
+    .navMenu{
+        display: none;
+    }
+
+    .body{
+        display: block;
+    }

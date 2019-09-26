@@ -8,12 +8,12 @@ menuToggler.addEventListener("click", function(){
     //toggle the navigation menu
     if(menuIsDisplayedOnPage){
         //remove the navigation menu if it is on the page
-       navMenu.style.display = "none";
-       document.body.style.display = "block";
+       navMenu.classList.add("navMenu");
+       document.body.classList.add("body");
     }else{
         //add the nav menu back to the page.
-        navMenu.style.display = "block";
-        document.body.style.display = "grid"; 
+        navMenu.classList.remove("navMenu");
+        document.body.classList.remove("body");
     }
     menuIsDisplayedOnPage = !menuIsDisplayedOnPage;
 });
