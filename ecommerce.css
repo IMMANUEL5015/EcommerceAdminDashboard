@@ -7,14 +7,6 @@ body{
     --small: 0.9em;
     background-color: rgb(248, 248, 248);
 }
-/* CSS styles to be used during the toggling of the navbar */
-    .navMenu{
-        display: none;
-    }
-
-    .body{
-        display: block;
-    }
 /* styles for NAVIGATION MENU*/
 nav{
     border-right: 1px solid var(--grey);
@@ -119,6 +111,7 @@ header{
 }
  #menu_toggler{
     margin-right: 40px;
+    display: none;
 }
 
 input[type="search"]{
@@ -317,13 +310,11 @@ footer{
 
 /* media queries styles for tablet and mobile devices*/
 @media screen and (max-width: 991px){
-    /* body styles */
-    .body{
+    /* styles for the header section and nav menu */
+    body{
         display: block;
     }
-
-    /* styles for the header section and nav menu */
-    #header form, .navMenu{
+    #header form,nav{
         display: none;
     }
     #header div{
@@ -332,7 +323,9 @@ footer{
     #header img{
         margin-top: 1px; 
     }
-    
+    #menu_toggler{
+        display: inline-block;
+    }
     /* styles for the more sales info section */
     #more_sales_info #first_section{
         width: 98%;
